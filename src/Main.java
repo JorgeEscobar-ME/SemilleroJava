@@ -10,5 +10,8 @@ public class Main {
         jorge.consignar(6000);
         jorge.retirar(1000);
         jorge.retirar(25000);
+        System.out.println(jorge.calcularInteres());
+        jorge.aplicarInteres();
+        jorge.imprimir();
     }
 }

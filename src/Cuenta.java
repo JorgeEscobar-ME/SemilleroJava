@@ -29,6 +29,21 @@ public class Cuenta {
         }
 
     }
-
+    public float calcularInteres(){
+        float interes = tasa*saldo;
+        return interes;
+    }
+    public void aplicarInteres(){
+        float interes=calcularInteres();
+        saldo=saldo-interes;
+        System.out.println("Se cobró el interés y su nuevo sueldo es: " + saldo);
+    }
+    public void imprimir(){
+        System.out.println("A continuación puedes ver la información de tu cuenta: ");
+        System.out.println("Tu saldo es " + saldo);
+        System.out.println("Has realizado " + consignaciones + " consignaciones");
+        System.out.println("Has realizado " + retiros + " retiros");
+        System.out.println("La tasa que tienes es de " + (tasa*100) + "%");
+    }
 }
 
