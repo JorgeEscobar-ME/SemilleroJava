@@ -13,5 +13,20 @@ public class Main {
         System.out.println(jorge.calcularInteres());
         jorge.aplicarInteres();
         jorge.imprimir();
+        CuentaAhorros jorgeAhorros= new CuentaAhorros(20000,0.05f);
+        jorgeAhorros.retirar(100);
+        jorgeAhorros.retirar(100);
+        jorgeAhorros.retirar(100);
+        jorgeAhorros.retirar(100);
+        jorgeAhorros.retirar(100);
+
+        jorgeAhorros.aplicarInteres();
+        jorgeAhorros.imprimirDatos();
+
+        CuentaCorriente jorgeCorriente = new CuentaCorriente(500.0f,0.1f);
+        jorgeCorriente.retirar(5000);
+        jorgeCorriente.consignar(6000);
+        jorgeCorriente.imprimir();
+
     }
 }
