@@ -1,7 +1,7 @@
 
 public class Factura extends Precio {
-    private String emisor;
-    private String cliente;
+    private final String emisor;
+    private final String cliente;
 
     public Factura(double valor, String emisor, String cliente) {
         super(valor);
@@ -15,4 +15,5 @@ public class Factura extends Precio {
         System.out.println("Emisor: " + emisor);
         System.out.println("Cliente: " + cliente);
     }
+
 }
