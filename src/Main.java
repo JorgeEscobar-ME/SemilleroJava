@@ -27,6 +27,8 @@ public class Main {
         jorgeCorriente.retirar(5000);
         jorgeCorriente.consignar(6000);
         jorgeCorriente.imprimir();
+        CasaRural casa1= new CasaRural(1,65,"Somalia",3,1,50,20);
+        casa1.impuesto();
 
     }
 }
