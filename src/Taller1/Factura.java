@@ -1,3 +1,4 @@
+package Taller1;
 
 public class Factura extends Precio {
     private final String emisor;
@@ -10,7 +11,7 @@ public class Factura extends Precio {
     }
 
     public void imprimirFactura() {
-        System.out.println("Factura");
+        System.out.println("Taller1.Factura");
         System.out.println("Valor: " + getValor());
         System.out.println("Emisor: " + emisor);
         System.out.println("Cliente: " + cliente);

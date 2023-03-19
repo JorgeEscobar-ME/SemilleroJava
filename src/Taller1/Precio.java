@@ -1,3 +1,5 @@
+package Taller1;
+
 public class Precio {
     private final double valor;
 

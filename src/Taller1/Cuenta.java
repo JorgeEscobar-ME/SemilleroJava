@@ -1,3 +1,5 @@
+package Taller1;
+
 public class Cuenta {
     public float saldo;
     public int consignaciones = 0;

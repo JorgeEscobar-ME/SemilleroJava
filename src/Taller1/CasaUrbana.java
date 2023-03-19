@@ -1,3 +1,5 @@
+package Taller1;
+
 public class CasaUrbana extends Viviendas{
     int nPisos;
 

@@ -1,3 +1,5 @@
+package Taller1;
+
 public class Local extends Inmueble{
     boolean interno;
 

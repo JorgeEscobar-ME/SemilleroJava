@@ -1,3 +1,5 @@
+package Taller1;
+
 public class CuentaCorriente extends Cuenta{
     public float sobregiro=0;
     public CuentaCorriente(float saldo, float tasa) {

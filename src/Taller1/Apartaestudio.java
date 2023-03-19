@@ -1,3 +1,5 @@
+package Taller1;
+
 public class Apartaestudio extends Apartamento{
     int nHabitaciones=1;
 

@@ -1,3 +1,5 @@
+package Taller1;
+
 public class CuentaAhorros extends Cuenta{
     public boolean activa;
     public CuentaAhorros(float saldo, float tasa) {

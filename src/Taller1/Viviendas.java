@@ -1,3 +1,5 @@
+package Taller1;
+
 public class Viviendas extends Inmueble{
     int nHabitaciones;
     int nBanios;

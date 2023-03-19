@@ -1,3 +1,5 @@
+package Taller1;
+
 public class LocalComercial extends Local{
     String centroComercial;
 
