@@ -1,7 +1,6 @@
 ﻿# SemilleroJava
 
-En la clase main es donde pruebo los metodos que hice para todos los problemas
-Aquí publico todas mis tareas del semillero de Softlond
+Los talleres están separados como paquetes dentro de src
 
 ## Estado actual: 
 - [x] Taller 1: Resuelto 100%
