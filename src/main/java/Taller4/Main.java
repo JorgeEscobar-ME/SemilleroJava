@@ -2,11 +2,14 @@ package Taller4;
 
 import Taller4.DAO.Account;
 import Taller4.DAO.AccountDAO;
+import Taller4.GUI.GUI;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         AccountDAO prueba = new AccountDAO();
-        Account pruebaCuenta = new Account("Jorge Alejandro Escobar", "Ahorros", 50000, "1053868118");
-        prueba.save(pruebaCuenta);
+
+        GUI ejecucion = new GUI();
+        ejecucion.iniciar();
+
     }
 }

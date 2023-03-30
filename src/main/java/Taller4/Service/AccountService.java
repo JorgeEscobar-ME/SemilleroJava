@@ -13,22 +13,14 @@ public class AccountService {
         accountCRUD = new AccountDAO();
     }
 
-    public void saveAccount(Account account){
-        accountCRUD.save(account);
-    }
-
-    public List<Account> showAccounts(){
-        return (List<Account>) accountCRUD.show();
-    }
-
-    public Account findAccount(String identificacion) throws Exception {
-        Object account=accountCRUD.find(identificacion);
+    public void depositAccount(String identificacion, double money) throws Exception {
+        Object account = accountCRUD.find(identificacion);
         if(account == null) {
             throw new Exception("No se encontro la persona");
+        }else {
+            System.out.println(account);
         }
-        return (Account) account;
-    }
-    public void deleteAccount(String identificacion){
-        accountCRUD.delete(identificacion);
+
+
     }
 }

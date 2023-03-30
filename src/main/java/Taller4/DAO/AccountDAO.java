@@ -1,9 +1,6 @@
 package Taller4.DAO;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.List;
 
 public class AccountDAO implements ICRUD{
@@ -70,7 +67,21 @@ public class AccountDAO implements ICRUD{
 
     @Override
     public Object find(String id) {
-        return null;
+        String name;
+        try (Connection conexion = DriverManager.getConnection(cadenaConexion)) {
+            String sentenciaSql = "SELECT * FROM accounts WHERE identificacion = '" + id + "'";
+            PreparedStatement preparedStatement = conexion.prepareStatement(sentenciaSql);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            name = null;
+            if (resultSet.next()) {
+                name = resultSet.getString("nombre_propietario");
+            }
+            resultSet.close();
+            preparedStatement.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return name;
     }
 
     @Override
